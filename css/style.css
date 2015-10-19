@@ -1,0 +1,258 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tangerine';
+  color: #37383D !important;
+  background-color: #e9f0f5;
+  min-height: 100%;
+  position: relative;
+}
+
+
+#mainContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  padding-bottom: 20px;
+}
+
+#title {
+  font-size: 6em !important;
+  font-family: 'Tangerine';
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 0px;
+}
+
+#featuredAuthor {
+  text-align: center;
+  line-height: 40px;
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.container-fluid{
+  margin: 25px 10px 0px 10px;
+}
+
+#openBook{
+  margin-top: -20px;
+  margin-left: -80px;
+  float: left;
+  height: 35%;
+  width: 35%;
+
+}
+
+#map{
+  height: 670px;
+  z-index: 10;
+  margin-top: -10px
+}
+
+#singleStar {
+  position: absolute;
+  top: 548px;
+  left: 950px;
+  z-index: 20;
+  height: 15px;
+}
+
+#Douglas{
+    position: absolute;
+    top: 430px;
+    left: 1050px;
+    height: 100px;
+    width: 100px;
+}
+
+#arrow{
+  position: absolute;
+  top: 495px;
+  left: 985px;
+  height: 45px;
+  width: 65px;
+}
+
+.navLink{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#navRow{
+  font-size: 1.5em !important;
+  background-color: #3DB7E4;
+  width: auto;
+  line-height: 50px;
+  height: 50px;
+}
+
+.redStar {
+  padding-bottom: 7px;
+}
+
+#timeline{
+  padding-left: 30px;
+}
+
+#resources{
+  padding-left: 50px;
+}
+
+#forum{
+  margin-left: -40px;
+}
+
+#Home{
+  padding-top: 20px;
+  font-size: 2em;
+  float: left;
+  color: #37383d;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#quill{
+  float: bottom;
+  padding-left: 75px;
+
+}
+
+#quillPic {
+  height: 100px;
+  margin-left: -3px;
+}
+
+#quillCaption{
+  text-align: left;
+  padding-top: 4px;
+  font-size: 3.5em;
+}
+
+
+#clickHere{
+  color: black;
+  padding-top: 10px;
+  font-size: 1.5em;
+
+}
+
+#inkPen{
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    width: 100%;
+    text-align: center;
+    color: #37383D;
+    padding-top: 10px;
+    border-top: 1px solid #37383D;
+    font-size: 2em;
+}
+
+#GBrooks{
+  position: absolute;
+  top: 450px;
+  left: 200px;
+  z-index: 30;
+}
+
+#HFuller {
+  position: absolute;
+  top: 175px;
+  left: 1200px;
+  z-index: 30;
+}
+
+#SSilverstein {
+    position: absolute;
+    top: 325px;
+    left: 1525px;
+    z-index: 30;
+}
+
+#figCap1, #figCap2, #figCap3 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 3em;
+}
+
+
+.authorBioText{
+  font-size: 1.5em;
+  line-height: 150%;
+  text-align:justify;
+  text-justify: newspaper;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  border-bottom: thin solid #ff0000;
+  font-family: 'Playfair Display', serif;
+}
+
+#authorSpot {
+  padding-top: 20px;
+}
+
+.quotes {
+  font-size: 4em;
+  line-height: 125%;
+  text-align: center;
+}
+
+.caption{
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.GB{
+  float: left;
+  padding-right: 25px;
+}
+
+.rotating-item {
+    display: none;
+}
+
+#bioPic{
+padding-top: 15px;
+text-align: center;
+}
+
+#infoList{
+  text-align: left;
+  padding-top: 20px;
+  font-size: 2.5em;
+  line-height: 125%;
+}
+
+.headings {
+  line-height: 125%;
+  font-weight: bold;
+  list-style-type: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .65em;
+}
+
+.bioInfo{
+  list-style-type: none;
+  line-height: 125%;
+  text-align:justify;
+  text-justify: newspaper;
+  font-family: 'Playfair Display', serif;
+  font-size: .6em;
+}
