@@ -36,6 +36,7 @@ body {
   font-size: 4em;
   font-weight: bold;
   margin-top: -20px;
+  padding-bottom: 15px;
 }
 
 .container-fluid{
@@ -171,16 +172,18 @@ footer {
   z-index: 30;
 }
 
-#HFuller {
+#RWright {
   position: absolute;
   top: 175px;
   left: 1200px;
   z-index: 30;
+  height: 350px;
+  width: 250px;
 }
 
-#SSilverstein {
+#MWalker {
     position: absolute;
-    top: 325px;
+    top: 500px;
     left: 1525px;
     z-index: 30;
 }
@@ -255,4 +258,24 @@ text-align: center;
   text-justify: newspaper;
   font-family: 'Playfair Display', serif;
   font-size: .6em;
+}
+
+#pics{
+  height: 300px;
+
+}
+
+#map{
+  height: 675px;
+  width: auto;
+}
+
+#sidebarHeading{
+  text-align: center;
+  font-size: 2em;
+}
+
+.topFive{
+  text-align: center;
+  font-size: 1.5em;
 }

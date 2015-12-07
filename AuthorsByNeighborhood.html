@@ -14,30 +14,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/script2.js" type="text/javascript"></script>
-  <script src="js/authorScript.js" type="text/javascript"></script>
-  <script>
-    $(document).ready(function() {
-      getAuthorInfo('brooks');
-    });
 
-  </script>
 </head>
 
 <body>
 
-  <div class="container-fluid" id="mainContainer">
-  <header id="header">
-      <div class = "row-fluid">
-        <div class="span4">
-        </div>
-        <div class="span4">
-          <h1 id = "title">Chicago Writers' Block</h1>
-        </div>
-        <div class="span4">
-          <img src="images/openBook.png" alt="Open Book" id="openBook"></img>
-        </div>
+<div class="container-fluid" id="mainContainer">
+<header id="header">
+    <div class = "row-fluid">
+      <div class="span4">
       </div>
-    </header>
+      <div class="span4">
+        <h1 id = "title">Chicago Writers' Block</h1>
+      </div>
+      <div class="span4">
+        <img src="images/openBook.png" alt="Open Book" id="openBook"></img>
+      </div>
+    </div>
+  </header>
 
   <nav id = "mainNavBar">
       <div class="row-fluid" id="navRow">
@@ -71,12 +65,13 @@
       </div>
   </nav>
 
-  <div class="row-fluid">
-    <div class="span12" id="homeLink">
-      <img src="images/inkPen2.png" id="inkPen">
-      <a href="index.html" id="Home">Home</a>
-    </div>
+<div class="row-fluid">
+  <div class="span12" id="homeLink">
+    <img src="images/inkPen2.png" id="inkPen">
+    <a href="index.html" id="Home">Home</a>
   </div>
+</div>
+
 
 <main>
 
@@ -84,44 +79,53 @@
     <div class="span3">
     </div>
     <div class="span6">
-    <h1 id= "featuredAuthor">Gwendolyn Brooks</h1>
+    <h1 id= "featuredAuthor">Authors By Neighborhood</h1>
     </div>
     <div class="span3">
     </div>
   </div>
 
 <div class="row-fluid">
-  <div class="span4 offset4" id="bioPic">
-    <img src="images/GBrooks.jpg" id="pics">
-  </div>
-  <div class="span4"></div>
-</div>
-
-<div class="row-fluid">
-  <div class="span4 offset4">
+  <div class="span2 offset5">
   <ul id="infoList">
-    <li class="headings">Date of Birth:</li>
-    <li class="bioInfo" id='DOB'></li>
-    <li class="headings">Area Influenced:</li>
-    <li class="bioInfo" id='Area'></li>
-    <li class="headings">Notable Works:</li>
-    <li class="bioInfo" id='Works'></li>
-    <li class="headings">Affiliations:</li>
-    <li class="bioInfo" id='Affiliations'>Author 1, Author 2</li>
-    <li class="headings">Additional Information:</li>
-    <li class="bioInfo" id='ExternalLink1'></li>
-    <li class="bioInfo" id='ExternalLink2'></li>
+    <li class="headings">Bronzeville</li>
+    <li class="bioInfo"><a href="SAnderson.html">Sherwood Anderson</a></li>
+    <li class="bioInfo"><a href="GBrooks.html">Gwendolyn Brooks</a></li>
+    <li class="bioInfo"><a href="MWalker.html">Margaret Walker</a></li>
+    <li class="bioInfo"><a href="RWright.html">Richard Wright</a></li><br>
+    <li class="headings">Evanston</li>
+    <li class="bioInfo"><a href="CSandburg.html">Carl Sandburg</a></li><br>
+    <li class="headings">Humboldt Park</li>
+    <li class="bioInfo"><a href="SBellow.html">Saul Bellow</a></li><br>
+    <li class="headings">Hyde Park</li>
+    <li class="bioInfo"><a href="SParetsky.html">Sara Paretsky</a></li><br>
+    <li class="headings">Loop</li>
+    <li class="bioInfo"><a href="EMasters.html">Edgar Masters</a></li>
+    <li class="bioInfo"><a href="ANiffenegger.html">Audrey Niffenegger</a></li>
+    <li class="bioInfo"><a href="STurrow.html">Scott Turrow</a></li><br>
+    <li class="headings">Oak Park</li>
+    <li class="bioInfo"><a href="EBurroughs.html">Edgar Burroughs</a></li><br>
+    <li class="headings">Pilsen</li>
+    <li class="bioInfo"><a href="SCisneros.html">Sandra Cisneros</a></li>
+    <li class="bioInfo"><a href="SDybek.html">Stuart Dybek</a></li><br>
+    <li class="headings">Rogers Park</li>
+    <li class="bioInfo"><a href="AHemon.html">Aleksandar Hemon</a></li><br>
+    <li class="headings">Washington Park</li>
+    <li class="bioInfo"><a href="LHansberry.html">Lorraine Hansberry</a></li><br>
+    <li class="headings">Waukegan</li>
+    <li class="bioInfo"><a href="EBradbury.html">Ray Bradbury</a></li><br>
+    <li class="headings">Wicker Park</li>
+    <li class="bioInfo"><a href="NAlgren.html">Nelson Algren</a></li>
+    <li class="bioInfo"><a href="JMeno.html">Joe Meno</a></li>
+    <li class="bioInfo"><a href="STerkel.html">Studs Terkel</a></li>
+
 </div>
-<div class="span4"></div>
+<div class="span5"></div>
 </div>
 
 <div class="row-fluid bioInfo" id="authorDetails">
 
 </div>
-
-
-
-
 
 </main>
 

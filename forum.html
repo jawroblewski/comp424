@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Writers' Block</title>
+  <title>Writers Block</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,32 +12,26 @@
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/jquery-1.11.3.js"></script>
-  <script src="js/script2.js" type="text/javascript"></script>
-  <script src="js/authorScript.js" type="text/javascript"></script>
-  <script>
-    $(document).ready(function() {
-      getAuthorInfo('brooks');
-    });
+  <script src="jquery-1.11.3.js"></script>
+  <script src="script2.js" type="text/javascript"></script>
 
-  </script>
 </head>
 
 <body>
 
-  <div class="container-fluid" id="mainContainer">
-  <header id="header">
-      <div class = "row-fluid">
-        <div class="span4">
-        </div>
-        <div class="span4">
-          <h1 id = "title">Chicago Writers' Block</h1>
-        </div>
-        <div class="span4">
-          <img src="images/openBook.png" alt="Open Book" id="openBook"></img>
-        </div>
+<div class="container-fluid" id="mainContainer">
+<header id="header">
+    <div class = "row-fluid">
+      <div class="span4">
       </div>
-    </header>
+      <div class="span4">
+        <h1 id = "title">Chicago Writers' Block</h1>
+      </div>
+      <div class="span4">
+        <img src="images/openBook.png" alt="Open Book" id="openBook"></img>
+      </div>
+    </div>
+  </header>
 
   <nav id = "mainNavBar">
       <div class="row-fluid" id="navRow">
@@ -71,12 +65,12 @@
       </div>
   </nav>
 
-  <div class="row-fluid">
-    <div class="span12" id="homeLink">
-      <img src="images/inkPen2.png" id="inkPen">
-      <a href="index.html" id="Home">Home</a>
-    </div>
+<div class="row-fluid">
+  <div class="span12" id="homeLink">
+    <img src="images/inkPen2.png" id="inkPen">
+    <a href="index.html" id="Home">Home</a>
   </div>
+</div>
 
 <main>
 
@@ -84,46 +78,49 @@
     <div class="span3">
     </div>
     <div class="span6">
-    <h1 id= "featuredAuthor">Gwendolyn Brooks</h1>
+    <h1 id= "featuredAuthor">Forum</h1>
     </div>
     <div class="span3">
     </div>
   </div>
 
-<div class="row-fluid">
-  <div class="span4 offset4" id="bioPic">
-    <img src="images/GBrooks.jpg" id="pics">
+  <div class="row-fluid">
+    <div class="span3">
+      <sidebar id="resourcesSidebar">
+        <h1 id="sidebarHeading" class="headings">What's Chicago Reading?</h1><br>
+        <h1 id="sidebarHeading" class="headings">Top 5 Nonfiction Titles</h1>
+        <p class="topFive bioInfo">"Super Shred: the Big Results Diet"<br> - Ian Smith</p>
+        <p class="topFive bioInfo">"The Warmth of Other Sund: the Epic Story of America's Great Migration"<br> - Isabel Wilkerson</p>
+        <p class="topFive bioInfo">"David and Goliath: Underdogs, Misfits and the Art of Battling Giants"<br> - Malcom Gladwell</p>
+        <p class="topFive bioInfo">"The Monuments Men: Allied Heroes, Nazi Thieves and the Greatest Treasure Hunt in History"<br> - Robert Edsel</p>
+        <p class="topFive bioInfo">"The Devil in the White City: Murder, Magic and the Madness at the Fair that Changed America"<br> - Erik Larson</p>
+        <h1 id="sidebarHeading" class="headings">Top 5 Fiction Titles</h1>
+        <p class="topFive bioInfo">"The Goldfinch"<br> - Donna Tartt</p>
+        <p class="topFive bioInfo">"Gone Girl: a Novel"<br> - Gillian Flynn</p>
+        <p class="topFive bioInfo">"Sycamore Row"<br> - John Grisham</p>
+        <p class="topFive bioInfo">"The Gods of Guilt: a Novel"<br> - Michael Connelly</p>
+        <p class="topFive bioInfo">"The Invention of Wings"<br> - Sue Monk Kidd</p>
+    </div>
+    <div class="span6">
+       <img src="images/bookClubForum.png" alt="Forum" height="800" width="900">
+    </div>
+    <div class="span3">
+    </div>
   </div>
-  <div class="span4"></div>
-</div>
 
-<div class="row-fluid">
-  <div class="span4 offset4">
-  <ul id="infoList">
-    <li class="headings">Date of Birth:</li>
-    <li class="bioInfo" id='DOB'></li>
-    <li class="headings">Area Influenced:</li>
-    <li class="bioInfo" id='Area'></li>
-    <li class="headings">Notable Works:</li>
-    <li class="bioInfo" id='Works'></li>
-    <li class="headings">Affiliations:</li>
-    <li class="bioInfo" id='Affiliations'>Author 1, Author 2</li>
-    <li class="headings">Additional Information:</li>
-    <li class="bioInfo" id='ExternalLink1'></li>
-    <li class="bioInfo" id='ExternalLink2'></li>
-</div>
-<div class="span4"></div>
-</div>
 
-<div class="row-fluid bioInfo" id="authorDetails">
 
-</div>
+
+
 
 
 
 
 
 </main>
+
+
+
 
 <footer>
     <div class = "row-fluid">
