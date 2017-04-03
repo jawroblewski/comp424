@@ -7,7 +7,8 @@
 body {
   font-family: 'Tangerine';
   color: #37383D !important;
-  background-color: #e9f0f5;
+ /* background-color: #e9f0f;*/
+  background-color: #ffffff;
   min-height: 100%;
   position: relative;
 }
