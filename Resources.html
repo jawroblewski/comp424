@@ -14,46 +14,101 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/script2.js" type="text/javascript"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaJ5PSKLn7p5trdZVqG5xWhTdBdRq89Zc&callback=initMap"></script>
-  <script>
-
-    var labelIndex = 0;
-    var labels =  '12345';
-
-    function initialize() {
-      var chicago = { lat: 41.8945, lng: -87.6299 };
-      var chicagoHistoryMuseum = { lat: 41.9122, lng: -87.6314 };
-      var haroldWashingtonLibrary = { lat: 41.8765, lng: -87.6282 };
-      var newberryLibrary = { lat: 41.9000, lng: -87.6306 };
-      var poetryFoundation = { lat: 41.8955, lng: -87.6299 };
-      var printersRowLitFest = { lat: 41.8734, lng: -87.6293 };
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: chicago
-      });
-
-        google.maps.event.addListener(map, 'click', function(event) {
-        addMarker(event.latLng, map);
-      });
-
-      addMarker(chicagoHistoryMuseum, map);
-      addMarker(haroldWashingtonLibrary, map);
-      addMarker(newberryLibrary, map);
-      addMarker(poetryFoundation, map);
-      addMarker(printersRowLitFest, map);
-    }
-
-    function addMarker(location, map) {
+  <script type="text/javascript">
+  var markers = [
+    {
+      "title": 'Chicago History Museum',
+      "lat": '41.9122',
+      "lng": '-87.6314',
+      "description": 'Chicago History Museum',
+      "type": 'Blue'
+    },
+    {
+      "title": 'Harold Washington Library',
+      "lat": '41.8765',
+      "lng": '-87.6282',
+      "description": 'Harold Washington Library',
+      "type": 'Blue'
+    },
+    {
+      "title": 'Newberry Library',
+      "lat": '41.9000',
+      "lng": '-87.6306',
+      "description": 'Newberry Library',
+      "type": 'Blue'
+    },
+    {
+      "title": 'Poetry Foundation',
+      "lat": '41.8955',
+      "lng": '-87.6299',
+      "description": 'Poetry Foundation',
+      "type": 'Blue'
+    },
+    {
+      "title": 'Printers Row Lit Fest',
+      "lat": '41.8734',
+      "lng": '-87.6293',
+      "description": 'Printers Row Lit Fest',
+      "type": 'Blue'
+    },
+    {
+      "title": 'Union Stockyards Gate',
+      "lat": '41.8186',
+      "lng": '-87.6485',
+      "description": 'Union Stockyards Gate',
+      "type": 'Red'
+    },
+  ];
+  window.onload = function () {
+    var mapOptions = {
+      center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var infoWindow = new google.maps.InfoWindow();
+    var latlngbounds = new google.maps.LatLngBounds();
+    var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+    var i = 0;
+    var interval = setInterval(function () {
+      var data = markers[i]
+      var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+      var icon = "";
+      switch (data.type) {
+        case "Red":
+              icon = "red";
+              break;
+        case "Blue":
+              icon = "blue";
+              break;
+      }
+      icon = "http://maps.google.com/mapfiles/ms/icons/" + icon + ".png";
       var marker = new google.maps.Marker({
-        position: location,
-        label: labels[labelIndex++ % labels.length],
-        map: map
+        position: myLatlng,
+        map: map,
+        title: data.title,
+        animation: google.maps.Animation.DROP,
+        icon: new google.maps.MarkerImage(icon)
       });
-    }
+      (function (marker, data) {
+        google.maps.event.addListener(marker, "click", function (e) {
+          infoWindow.setContent(data.description);
+          infoWindow.open(map, marker);
+        });
+      })(marker, data);
+      latlngbounds.extend(marker.position);
+      i++;
+      if (i == markers.length) {
+        clearInterval(interval);
+        var bounds = new google.maps.LatLngBounds();
+        map.setCenter(latlngbounds.getCenter());
+        map.fitBounds(latlngbounds);
+      }
+    }, 80);
+  }
+  </script>
 
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
 
 </head>
 
@@ -62,13 +117,14 @@
 <div class="container-fluid" id="mainContainer">
 <header id="header">
     <div class = "row-fluid">
-      <div class="span4">
+      <div class="span2">
       </div>
-      <div class="span4">
-        <h1 id = "title">Chicago Writers' Block</h1>
-      </div>
-      <div class="span4">
+      <div class="span8">
+        <h1 id = "title">Chicago Writers' Block
         <img src="images/openBook.png" alt="Open Book" id="openBook"></img>
+        </h1>
+      </div>
+      <div class="span2">
       </div>
     </div>
   </header>
@@ -82,7 +138,7 @@
         <img src="images/redStar.png" alt="Red Star" class="redStar" width="35%">
       </div>
       <div class="span2">
-        <a href="AuthorsByNeighborhood.html" class="navLink" id="neighborhood">Authors by Neighborhood</a>
+        <a href="AuthorsByNeighborhood.html" class="navLink" id="neighborhood">Neighborhood</a>
       </div>
       <div class="span1">
         <img src="images/redStar.png" alt="Red Star" class="redStar" width="35%">
@@ -100,7 +156,7 @@
         <img src="images/redStar.png" alt="Red Star" class="redStar" width="35%">
       </div>
       <div class="span1">
-          <a href="forum.html" class="navLink" id="forum">Forum</a>
+          <a href="forum.html" class="navLink" id="forum">Spotlight</a>
       </div>
     </div>
 </nav>
@@ -119,7 +175,7 @@
     <div class="span3">
     </div>
     <div class="span6">
-    <h1 id= "featuredAuthor">Top 5 literary resources in Chicago</h1>
+    <h1 id= "featuredAuthor">Prominent Resources and Landmarks</h1>
     </div>
     <div class="span3">
     </div>
@@ -128,7 +184,7 @@
   <div class="row-fluid">
     <div class="span2">
       <sidebar id="resourcesSidebar">
-        <h1 id="sidebarHeading" class="headings">Locations</h1>
+        <h1 id="sidebarHeading" class="headings">Resources</h1>
         <p class="topFive bioInfo">1 - Chicago History Museum<br>1601 N Clark St</p>
         <p class="topFive bioInfo">2 - Harold Washington Library<br>400 S State St</p>
         <p class="topFive bioInfo">3 - Newberry Library<br>60 W Walton</p>
@@ -138,9 +194,13 @@
       </sidebar>
     </div>
     <div class="span8">
-      <div id="map"></div>
+      <div id="dvMap" style="width: 100%; height: 600px"></div>
     </div>
     <div class="span2">
+      <div id="landmark-sidebar">
+        <h1 id="landmark-Heading" class="headings">Landmarks</h1>
+        <p class="topFive bioInfo">1 - Union Stockyards Gate<br>S Union Ave</p>
+      </div>
     </div>
   </div>
 
@@ -148,7 +208,7 @@
 
 <footer>
     <div class = "row-fluid">
-    <p>&copy;Team Pinnacle 2015</p>
+    <p>&copy;Team Pinnacle 2017</p>
     </div>
 </footer>
 </body>

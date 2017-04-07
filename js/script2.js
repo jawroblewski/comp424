@@ -15,4 +15,6 @@ function quoteLoop(){
 quoteLoop();
 setInterval(quoteLoop,22000);
 
+
+
 });

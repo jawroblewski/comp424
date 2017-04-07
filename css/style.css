@@ -5,9 +5,9 @@
 }
 
 body {
+  font-size: 12px;
   font-family: 'Tangerine';
   color: #37383D !important;
- /* background-color: #e9f0f;*/
   background-color: #ffffff;
   min-height: 100%;
   position: relative;
@@ -45,11 +45,9 @@ body {
 }
 
 #openBook{
-  margin-top: -20px;
-  margin-left: -80px;
-  float: left;
-  height: 35%;
-  width: 35%;
+  margin-top: -3%;
+  /*margin-left: -80px;*/
+  float: right;
 
 }
 
@@ -94,6 +92,7 @@ body {
   width: auto;
   line-height: 50px;
   height: 50px;
+  margin-bottom: 5%;
 }
 
 .redStar {
@@ -218,7 +217,7 @@ footer {
 }
 
 .caption{
-  font-size: 2.5em;
+  font-size: 1.9em;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -226,6 +225,7 @@ footer {
 .GB{
   float: left;
   padding-right: 25px;
+  margin-bottom: 5%;
 }
 
 .rotating-item {
@@ -274,9 +274,141 @@ text-align: center;
 #sidebarHeading{
   text-align: center;
   font-size: 2em;
+  color: #3db7e4;
+}
+
+#landmark-Heading{
+  text-align: center;
+  font-size: 2em;
+  color: red;
 }
 
 .topFive{
   text-align: center;
+  font-size: 1.5em;
+}
+
+.headline-1{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.teaser-text-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#read-more-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-more-text-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-less-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.headline-2{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.teaser-text-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#read-more-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-more-text-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-less-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.headline-3{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.teaser-text-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#read-more-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-more-text-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-less-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.headline-4{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.teaser-text-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#read-more-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-more-text-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-less-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.headline-5{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.teaser-text-5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#read-more-5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-more-text-5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+#read-less-5 {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
 }
